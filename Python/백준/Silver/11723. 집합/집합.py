@@ -15,11 +15,10 @@ for _ in range(n):
     elif op == "check":
         print(1 if int(line[1]) in lst else 0)
     elif op == "toggle":
-        x = int(line[1])
-        if x in lst:
-            lst.discard(x)
+        if int(line[1]) in lst:
+            lst.discard(int(line[1]))
         else:
-            lst.add(x)
+            lst.add(int(line[1]))
     elif op == "all":
         lst = set(range(1, 21))
     elif op == "empty":

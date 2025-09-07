@@ -42,5 +42,6 @@ for _ in range(n):
     for i in range(inputNum):
         # fib(n) = fib(n-1) + fib(n-2)
         # 0은 1이 호출된 횟수만큼, 1은 0과 1이 호출된 합만큼 출력됨
-        zero, one = one, zero + one
+        zero, one = one, zero + one    # 0일때의 (0,1) 값을 계속 갱신 시키는 것!!
+
     print(zero, one)    
